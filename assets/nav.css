@@ -1,13 +1,23 @@
 /*global styling*/
 @font-face { font-family: Inika; src: url(fonts/Inika-Regular.ttf);}
+:root{
+    --header-text:Inika;
+    --my-orange:#E39063;
+    --my-red:#8D1D19;
+    --my-white:#D9D9D9;
 
+}
+
+h1{
+    font-family: var(--header-text);
+}
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 nav{
-    background-color: #E39063;
+    background-color: var(--my-orange);
     display:flex;
     justify-content:space-around;
     overflow: hidden;
