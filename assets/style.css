@@ -1,11 +1,5 @@
-/*global styling*/
-@font-face { font-family: Inika; src: url(fonts/Inika-Regular.ttf);}
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
+
 p {
     padding: 10px;
     margin: 0;
@@ -39,7 +33,40 @@ p {
 .content {
     position: relative;
     z-index: 1;
-    background-color: lightgray;
+    background-image: url(Commision-pricing.png);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+    border-radius: 0.25rem;
+}
+.content-price {
+    position: relative;
+    z-index: 1;
+    background-image: url(Commision-pricing.png);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+    border-radius: 0.25rem;
+}
+.content-form {
+    position: relative;
+    z-index: 1;
+    background-image: url(Commision-pricing.png);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+    border-radius: 0.25rem;
+}
+.content-abt {
+    position: relative;
+    z-index: 1;
+    background-color:lightgray;
     padding: 20px;
     text-align: center;
     align-content: center;
@@ -70,38 +97,7 @@ p {
 }
 
 /* nav bar */
-nav{
-    background-color: #E39063;
-    display:flex;
-    justify-content:space-around;
-    overflow: hidden;
-    font-size:2vw;
-    width: 100%;
-}
-nav img{
-    width: 40px;
-    }
-nav a{
-    list-style-type: none;
-    text-decoration: none;
-    color: black;
-}
 
-nav a :active{
-    list-style-type: none;
-    text-decoration: none;
-    color: black;
-}
-#short{
-       width:2.5%;
-       }
-       
-.homelink{
-    text-align: left;
-    list-style-type: none;
-    text-decoration: none;
-    display: inline;
-}
 
 /*pricing*/
 .pricing{
@@ -115,33 +111,24 @@ nav a :active{
   position: relative;
   width: 100%;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 20px;
   color: #fff;
 }
 
-/* Style the background image */
-.background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('your-image.jpg'); /* Replace 'your-image.jpg' with your image file */
-  background-size: cover;
-  background-position: center;
-  opacity: 0.5; /* Adjust the opacity as needed */
-  z-index: -1;
-}
 
 /* Style the buttons */
-.buttons {
+.buttons-pricing {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
-
-.buttons button {
+.buttons-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+.buttons-pricing button {
   padding: 10px 20px;
   text-decoration: none;
   color: #333;
@@ -151,6 +138,16 @@ nav a :active{
   cursor: pointer;
 }
 
+.buttons-form button{
+    padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  background-color:#E39063;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;  
+}
+
 .buttons button:hover {
   background-color: #555;
 }
@@ -158,4 +155,9 @@ nav a :active{
     text-decoration: none;
     color: #333;
     background-color:#E39063;
+}
+button a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
 }
